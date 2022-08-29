@@ -14,23 +14,23 @@ In addition to scraping information from my personal library, I also collected d
 
 Both the library.csv dataset and randomuser.csv consist of track metadata and Spotify's audio features for each of the songs.
 
-
 Attribute | Description      | Type | Value
 ----------|------------------|------|------
-Id      | Spotify track ID. |  | 
-Title | Title of the track. |  | 
-All_artists | All artists featured on the track. |  | 
-Popularity | Spotify's popularity rating. It's based on number of plays and how recent they are. |  | 
-Release_date | Date when the track was first released. |  | 
-Danceability | Danceability describes how suitable a track is for dancing based on a combination of elements such as tempo, rhythm stability, beat strength. |  | 
-Energy | Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity. |  | 
-Key | The key the track is in. |  | 
-Loudness | The loudness of a track in decibels (dB). |  | 
-Mode | Detects the modal quality of a track, if the song uses major or minor scale. |  | 
-Acousticness | A measure from 0.0 to 1.0 of whether the track is acoustic. |  | 
-Instrumentalness | Predicts whether a track contains no vocals. |  | 
-Liveness | Detects live recordings. |  | 
-Valence | A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. |  |  
-Tempo | The overall tempo of a track in beats per minute (BPM). |  | 
-Duration_ms | Duration of the song in miliseconds. |  | 
-Time_signature | The time signature notes how many beats are in each measure of a piece of music. |  | 
+Id      | Spotify track ID. | String | Discrete
+Title | Title of the track. | String | Discrete
+All_artists | All artists featured on the track. | String | Discrete
+Popularity | Spotify's popularity rating. It's based on number of plays and how recent they are. | Numeric | Discrete
+Release_date | Year when the track was first released. | String | Discrete
+Danceability | Danceability describes how suitable a track is for dancing based on a combination of elements such as tempo, rhythm stability, beat strength. | Numeric | Continuous
+Energy | Energy is a measure that represent intensity and activity. | Numeric | Continuous
+Key | The key the track is in. | Numeric | Discrete
+Loudness | The loudness of a track in decibels (dB). | Numeric | Continuous
+Mode | Detects the modal quality of a track, if the song uses major or minor scale. | Categorical | Binary
+Acousticness | Detects whether the track is acoustic. | Numeric | Continuous
+Instrumentalness | Predicts whether a track contains no vocals. | Numeric | Continuous
+Liveness | Detects live recordings. | Numeric | Continuous
+Valence | A measure describing the musical positiveness conveyed by a track. | Numeric | Continuous
+Tempo | The overall tempo of a track in beats per minute (BPM). | Numeric | Continuous
+Duration_ms | Duration of the song in miliseconds. | Numeric | Discrete
+Time_signature | The time signature notes how many beats are in each measure of a piece of music. | Numeric | Discrete
+
