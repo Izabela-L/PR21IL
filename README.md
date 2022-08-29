@@ -37,6 +37,8 @@ Time_signature | The time signature notes how many beats are in each measure of 
 
 ### Spotify Audio Features
 
+Spotify calculates and collects a variety of different audio features for each track. They represent different aspects of a song like mood, technical properties and context. This is the basis of how their algorithm recommends new songs to users and creates personalized playlists.  The attribute descriptions were taken from Spotify Developer guide.
+
 - Acousticness: A confidence measure from 0.0 to 1.0 of whether the track is acoustic. 1.0 represents high confidence the track is acoustic.
     
 
@@ -68,3 +70,4 @@ Time_signature | The time signature notes how many beats are in each measure of 
     
 
 - Valence: A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry).
+
