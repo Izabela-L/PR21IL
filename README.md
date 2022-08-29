@@ -71,11 +71,11 @@ Spotify calculates and collects a variety of different audio features for each t
 
 - Valence: A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry).
 
-## Preprocessing and information on the datasets
+## Preprocessing and first look at data
 
 Before I performed any analysis on the data, I performed a few preprocessing steps. First I made sure the dataframes don't contain any NaN values and removed unwanted columns. Then I normalized the data by rescaling the values of tempo and loudness using min-max scaler. This was done so that all of the continuous audio feature values reside in the same range between 0 and 1. 
 
-The dataset which contains my library is library.csv. It contains a total of 2268 tracks from 199 artists. The top five most represented artists are The Cure, Lady Gaga, My Chemical Romance, The Used and Bauhaus. 
+The dataset which contains my library is library.csv. It contains a total of 2268 tracks from 199 artists. The top five most represented artists are:
 
 Artist | # of tracks per artist 
 ----------|------------------|
@@ -84,6 +84,18 @@ Lady Gaga | 100
 My Chemical Romance | 99
 The Used | 69
 Bauhaus | 66
+
+The dataset containing a random user's library has 2189 tracks from 703 artists. The top five most frequent artists in their library are:
+
+Artist | # of tracks per artist 
+----------|------------------|
+Bruce Springsteen | 149
+Queen | 119
+Elvis Presley | 99
+Michael Jackson | 47
+Billy Squier | 31
+
+Just from the number of songs and artists it could be possible to conclude the other person has a more diverse music taste than I do. My library contains just below 200 artists while theirs has over 700. 
 
 
 ## Analysis
