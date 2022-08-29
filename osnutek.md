@@ -1,5 +1,5 @@
 # Project draft
 ## Description of the problem
-The field of my research is music. I want to explore music industry trends in the past few years, from 2006 to 2020. I want to see how popularity of genres changes through the years, where does popular music come frome and who the most popular artists are. I want to see if specific countries prefer listening to certain genres or artists and if there is any correlation with the music those countries produce. I would also like to answer the question whether times of crisis have an impact on music trends. 
+The field of my research is music. I wanted to anaylze my music taste with the help of datamining. I want to see if it is possible to isolate distinctive features in the genres and artists I gravitate towards. The main goal of this project is to get better insight into my music taste, find trends and patterns in my listening habits, discover how diverse (or homogenous) my taste is and learn which musical properties influence my liking of a song. 
 ## Data
-I will use different sources to compile my data. My plan is scrape data from some/all of these sources: last.fm, Wikipedia, Spotify, MusicBrainz. The data I need is artist name, genre, release date, country of origin, and number of listeners/scrobbles.
+The data will be collected from my Spotify account using their API and python tools for scraping song information. I will collect the basic attributes of a song such as the name, artist, release date as well as deeper metadata and musical features. 
