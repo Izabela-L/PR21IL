@@ -75,28 +75,23 @@ Spotify calculates and collects a variety of different audio features for each t
 
 Before I performed any analysis on the data, I performed a few preprocessing steps. First I made sure the dataframes don't contain any NaN values and removed unwanted columns. Then I normalized the data by rescaling the values of tempo and loudness using min-max scaler. This was done so that all of the continuous audio feature values reside in the same range between 0 and 1. 
 
-The dataset which contains my library is library.csv. It contains a total of 2268 tracks from 199 artists. The top five most represented artists are:
+The dataset which contains my library is library.csv. It contains a total of 2268 tracks from 199 artists. My top twenty most represented artists are:
 
-Artist | # of tracks per artist 
-----------|------------------|
-The Cure | 111
-Lady Gaga | 100
-My Chemical Romance | 99
-The Used | 69
-Bauhaus | 66
+![alt text](top20MINE.jpg)
 
-The dataset containing a random user's library has 2189 tracks from 703 artists. The top five most frequent artists in their library are:
+The top three alone contain more than 300 songs between them. It is easy to see I favor certain artists over others. 31% of songs come from just 10 artists. The rest of the artists contribute with  40 or less tracks. There are also many artists who are represented with just 1 or 2 songs. However, there is one factor I didn't take into account - the overall number of songs one artists has in their discography. So while this graph illustrates my likes it doesn't accurately portray how much I like an individual artist.
 
-Artist | # of tracks per artist 
-----------|------------------|
-Bruce Springsteen | 149
-Queen | 119
-Elvis Presley | 99
-Michael Jackson | 47
-Billy Squier | 31
+![alt text](songsperartistMINE.jpg)
 
-Just from the number of songs and artists it could be possible to conclude the other person has a more diverse music taste than I do. My library contains just below 200 artists while theirs has over 700. 
+This histogram shows all 199 artists and the number of songs they have in the playlist.
 
+The same preprocessing steps were done on the dataset for the random user.
+
+The dataset containing a random user's library has 2189 tracks from 703 artists. Just from the number of songs and artists it could be possible to conclude the other person has a more diverse music taste than I do. My library contains just below 200 artists while theirs has over 700. 
+
+The top twenty most frequently found artists in their library are:
+
+![alt text](top20RAND.png)
 
 ## Analysis
 
