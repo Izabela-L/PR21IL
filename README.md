@@ -75,6 +75,7 @@ Spotify calculates and collects a variety of different audio features for each t
 
 Before I performed any analysis on the data, I performed a few preprocessing steps. First I made sure the dataframes don't contain any NaN values and removed unwanted columns. Then I normalized the data by rescaling the values of tempo and loudness using min-max scaler. This was done so that all of the continuous audio feature values reside in the same range between 0 and 1. 
 
+### Distribution of songs and artists
 The dataset which contains my library is library.csv. It contains a total of 2268 tracks from 199 artists. My top twenty most represented artists are:
 
 ![alt text](top20MINE.jpg)
@@ -85,6 +86,7 @@ The top three alone contain more than 300 songs between them. It is easy to see 
 
 This histogram shows all 199 artists and the number of songs they have in the playlist.
 
+### Distribution of songs and artists for random user
 The same preprocessing steps were done on the dataset for the random user.
 
 The dataset containing a random user's library has 2189 tracks from 703 artists. Just from the number of songs and artists it could be possible to conclude the other person has a more diverse music taste than I do. My library contains just below 200 artists while theirs has over 700. 
