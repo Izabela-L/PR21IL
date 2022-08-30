@@ -84,10 +84,14 @@ The top three alone contain more than 300 songs between them. It is easy to see 
 
 ![alt text](songsperartistMine.jpg)
 
-This histogram shows all 199 artists and the number of songs they have in the playlist.
+This histogram shows all 199 artists and the number of songs they have in the playlist. Each bar is one artist. Now it's easy to see how much more some artists are found than others.
+
+![alt text](releasedatedistribMINE.jpg)
+Most tracks in the dataset that represents my music library were released the last two decades. The year 1998 stands out as an outlier in this trend. There is also a minor spike in early 80s. The data is left-skewed. Overall, we can see I preffer modern artists and gravitate towards recently recorded music. 
+
 
 ### Distribution of songs and artists for random user
-The same preprocessing steps were done on the dataset for the random user.
+The other dataset that I am using in this analysis belongs to a random Spotify user. I thought that comparing my music data with somebody elses could provide me with further insight. I selected this playlist because it contains another user's full library and has a similar number of tracks. I performed all of the same preprocessing steps on this dataset as I did for the previous one.
 
 The dataset containing a random user's library has 2189 tracks from 703 artists. Just from the number of songs and artists it could be possible to conclude the other person has a more diverse music taste than I do. My library contains just below 200 artists while theirs has over 700. 
 
@@ -95,5 +99,51 @@ The top twenty most frequently found artists in their library are:
 
 ![alt text](top20RAND.png)
 
-## Analysis
+Similarly to my own dataset, this user has some clear favorites too, with Bruce Springsteen taking up 6.81% of their library.
 
+![alt text](releasedatedistribRAND.jpg)
+
+The songs are more evenly distributed over time in the other dataset. We could hypothesize about the reasons for this kind of distibution. The user might be older or simply prefer older musical acts.
+
+## Analysis
+I started the analysis by plotting a histogram of the Spotify audio features.
+
+![alt text](mymusicfeatureshistogram.jpg) 
+
+Here we can see the distribution audio features across the data. Danceability most closely resembles normal distribution out of them all. Most songs are moderately danceable, while very slow and very fast songs are rarer. The histogram for energy is negatively skewed and shows there are more songs with moderate to high energy. Fairly loud songs are more represented in my library than quiet ones, which correlates positively with energy.
+
+Measures for acousticness and instrumentalness are low, meaning that there aren't many purely acoustic or instrumental tracks in my library. Next feature shows there are some possible instances of live recordings. Valence is a feature the mood of a track, how 'happy' a song sounds. Overall, it looks like the data skews slightly towards sadder, low mood songs. Tempo is moderate, and most songs lie between the values of 0.4 and 0.6
+
+![alt text](radar.jpg) 
+
+This radar chart represents the mean values of audio features. The prevalent attributes amongst artists in my library are loudness and energy. The frequency of both features could be explained by my liking of rock and pop music. Despite high loudness and energy, valence isn't that common of an attribute. Most songs have low to moderate score. A possible explanation is the prevalence of alternative bands like My Chemical Romance in the data set - high energy songs with negative, sad or angry moods. 
+
+![alt text](meanvaluesbar.jpg) 
+
+Mean values of audio features represented in a standard bar plot.
+
+![alt text](pairplot.jpg) 
+
+Here I wanted to more closely examine the relationship between danceability, energy, loudness, valence and tempo. A pair plot is a good tool to find correlation(or lack thereof) between pairs of attributes. There is a positive relationship between energy and loudness and a negative one between energy and acousticness.  
+
+![alt text](loudenergy.jpg)
+
+It seems that tracks with high values for loudness also have high energy. From this, one could conclude my data set contains mostly loud, energetic songs which is true as mentioned before. It would be easy to extrapolate the artists in my library are more likely to produce songs in genres like rock, punk and pop as opposed to blues, jazz or raggae for example.
+
+![alt text](acousticenergy.jpg) 
+
+In my data set, there isn't a large amount of purely acoustic tracks and we can see that I prefer songs with high energy which are not likely to be acoustic. 
+
+![alt text](danceval.jpg) 
+
+Valence and danceability correlate quite a bit, however there also seem to be some outliers. This means that the data includes some tracks which have a negative mood but are highly danceable and vice versa. Sad but danceable songs can be found in some subgenres of goth, emo and rock which I do listen to frequently. This is consistent with my previous observations and with the most frequent artists featured in the dataset. 
+
+## Comparison
+
+![alt text](meancomp.jpg) 
+
+![alt text](meancomp2.jpg) 
+
+![alt text](varietyoffeaturescomp.jpg)
+
+![alt text](standarddev.jpg)
