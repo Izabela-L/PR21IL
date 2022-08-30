@@ -81,7 +81,7 @@ The dataset which contains my library is library.csv. It contains a total of 226
 
 The top three alone contain more than 300 songs between them. It is easy to see I favor certain artists over others. 31% of songs come from just 10 artists. The rest of the artists contribute with  40 or less tracks. There are also many artists who are represented with just 1 or 2 songs. However, there is one factor I didn't take into account - the overall number of songs one artists has in their discography. So while this graph illustrates my likes it doesn't accurately portray how much I like an individual artist.
 
-![alt text](songsperartistMINE.jpg)
+![alt text](songsperartistMine.jpg)
 
 This histogram shows all 199 artists and the number of songs they have in the playlist.
 
