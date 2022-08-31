@@ -76,7 +76,17 @@ Spotify calculates and collects a variety of different audio features for each t
 Before I performed any analysis on the data, I performed a few preprocessing steps. First I made sure the dataframes don't contain any NaN values and removed unwanted columns. Then I normalized the data by rescaling the values of tempo and loudness using min-max scaler. This was done so that all of the continuous audio feature values reside in the same range between 0 and 1. 
 
 ### Distribution of songs and artists
-The dataset which contains my library is library.csv. It contains a total of 2268 tracks from 199 artists. My top twenty most represented artists are:
+The dataset which contains my library is library.csv. It contains a total of 2268 tracks from 199 artists. The top five artists with the most songs in the dataset are: 
+
+Songs per artist:|
+----------|------------------
+The Cure | 111
+Lady Gaga | 100
+My Chemical Romance | 99
+The Used | 69
+Bauhaus | 66
+
+Below is a more detailed look into the most common artists you can find in my playlist:
 
 ![alt text](top20MINE.jpg)
 
@@ -116,7 +126,7 @@ Measures for acousticness and instrumentalness are low, meaning that there aren'
 
 ![alt text](radar.jpg) 
 
-This radar chart represents the mean values of audio features. The prevalent attributes amongst artists in my library are loudness and energy. The frequency of both features could be explained by my liking of rock and pop music. Despite high loudness and energy, valence isn't that common of an attribute. Most songs have low to moderate score. A possible explanation is the prevalence of alternative bands like My Chemical Romance in the data set - high energy songs with negative, sad or angry moods. 
+This radar chart represents the mean values of audio features. The prevalent attributes amongst artists in my library are loudness and energy. The frequency of both features could be explained by my liking of rock and pop music. Despite high loudness and energy, valence isn't that common of an attribute. Most songs have low to moderate score. A possible explanation is the prevalence of bands like My Chemical Romance and The Misfits in the data set - high energy songs with negative, sad or angry moods. 
 
 ![alt text](meanvaluesbar.jpg) 
 
@@ -136,14 +146,23 @@ In my data set, there isn't a large amount of purely acoustic tracks and we can 
 
 ![alt text](danceval.jpg) 
 
-Valence and danceability correlate quite a bit, however there also seem to be some outliers. This means that the data includes some tracks which have a negative mood but are highly danceable and vice versa. Sad but danceable songs can be found in some subgenres of goth, emo and rock which I do listen to frequently. This is consistent with my previous observations and with the most frequent artists featured in the dataset. 
+There is a certain degree of correlation between valence and danceability, however there also seem to be some outliers. We can see that the data includes some tracks which have negative mood attributes but also score high on the danceability scale and vice versa. Sad but danceable songs can be found in some subgenres of goth which I do listen to frequently. This is consistent with my previous observations and with the most frequent artists featured in the dataset. 
 
 ## Comparison
 
-![alt text](meancomp.jpg) 
+![alt text](meancomp.jpg)
 
-![alt text](meancomp2.jpg) 
+The plot shows how the mean values of audio features compare between the two data sets. This users top audio features are valence, loudness and energy. My library contains songs that are sadder, more instrumental and more energetic while the random user seems to enjoy happier, louder songs with a lower measure of BPM.
+
+![alt text](meancomp2.jpg)
+
+This next plot shows the difference between mean values for each audio feature. The biggest difference is found in instrumentalness and valence, while our loudness values are the most similar. 
 
 ![alt text](varietyoffeaturescomp.jpg)
+
+STD mean of audio features from my library 0.21
+STD mean of audio features from a random library 0.19
+
+The results could indicate that the features found in my data set are more diverse than the aduio attributes found in the data set for the random user, but only slightly. From this, we could conclude that my music taste is more diverse in comparison, however it could also just mean that some tracks simply have much higher values of specific features which skews the results.
 
 ![alt text](standarddev.jpg)
