@@ -78,8 +78,8 @@ Before I performed any analysis on the data, I performed a few preprocessing ste
 ### Distribution of songs and artists
 The dataset which contains my library is library.csv. It contains a total of 2268 tracks from 199 artists. The top five artists with the most songs in the dataset are: 
 
-Songs per artist:|
-----------|------------------
+Artist | # of songs
+----------|----------
 The Cure | 111
 Lady Gaga | 100
 My Chemical Romance | 99
