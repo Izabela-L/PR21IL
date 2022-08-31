@@ -132,23 +132,35 @@ This radar chart represents the mean values of audio features. The prevalent att
 
 Mean values of audio features represented in a standard bar plot.
 
+Here I wanted to more closely examine how different audio features correlate to one another. Below we can see a pair plot showing the relationship between pairs of audio features found in my data set.
+
 ![alt text](pairplot.jpg) 
 
-Here I wanted to more closely examine the relationship between danceability, energy, loudness, valence and tempo. A pair plot is a good tool to find correlation(or lack thereof) between pairs of attributes. There is a positive relationship between energy and loudness and a negative one between energy and acousticness.  
+Most of the features actually don't have a very strong relationship between them. There also seem to be plenty of outliers in a few of the plots. Due to the number of features and tracks the data is a bit hard to read. A heatmap gives us clearer insight.
+
+![alt text]('heatmap.jpg')
+
+Now it's a lot easier to see how pairs of features correlate to eachother. There are clear relationships between loudness and energy, valence and danceability and acousticness and energy.
 
 ![alt text](loudenergy.jpg)
 
-It seems that tracks with high values for loudness also have high energy. From this, one could conclude my data set contains mostly loud, energetic songs which is true as mentioned before. It would be easy to extrapolate the artists in my library are more likely to produce songs in genres like rock, punk and pop as opposed to blues, jazz or raggae for example.
+Loudness and energy are the only two features in the data set that have a strong positive correlation. It seems that tracks with high values for loudness also have high energy. From this, one could conclude my data set contains mostly loud, energetic songs which is true as mentioned before. It would be easy to extrapolate the artists in my library are more likely to produce songs in genres like rock, punk and pop as opposed to blues, jazz or reggae for example.
 
 ![alt text](acousticenergy.jpg) 
 
-In my data set, there isn't a large amount of purely acoustic tracks and we can see that I prefer songs with high energy which are not likely to be acoustic. 
+Energy and acousticness have a strong negative correlation. In my data set, there isn't a large amount of purely acoustic tracks and we can see that I prefer songs with high energy which are not likely to be acoustic.
 
 ![alt text](danceval.jpg) 
 
-There is a certain degree of correlation between valence and danceability, however there also seem to be some outliers. We can see that the data includes some tracks which have negative mood attributes but also score high on the danceability scale and vice versa. Sad but danceable songs can be found in some subgenres of goth which I do listen to frequently. This is consistent with my previous observations and with the most frequent artists featured in the dataset. 
+Valence and danceability have a slightly positive relationship, however there also seem to be some outliers. This means that the data includes some tracks which have a negative mood but are highly danceable and vice versa. Sad but danceable songs can be found in some subgenres of goth, emo and rock which I do listen to frequently. This is consistent with my previous observations and with the most frequent artists featured in the dataset.
 
 ## Comparison
+
+First, I wanted to take a look at popularity scores and how the compare. 
+
+![alt text]('popularity.jpg')
+
+The distribution of popularity is more irregular in the data set representing my music library, with most of the tracks having a very low popularity score. The number of tracks drops of the higher the score is. The other set includes music that is moderately to highly popular although the frequency of songs also decreases with popularity. Neither of us seem to listen to many very popular songs, but comparatively my taste seems to be a bit more niche.
 
 ![alt text](meancomp.jpg)
 
@@ -158,11 +170,13 @@ The plot shows how the mean values of audio features compare between the two dat
 
 This next plot shows the difference between mean values for each audio feature. The biggest difference is found in instrumentalness and valence, while our loudness values are the most similar. 
 
+In order to see how varied the two data sets are in terms of audio features, I decided to use standard deviation. I computed the mean of standard deviation values for each of the music attributes.
+
 ![alt text](varietyoffeaturescomp.jpg)
 
 STD mean of audio features from my library 0.21
 STD mean of audio features from a random library 0.19
 
-The results could indicate that the features found in my data set are more diverse than the aduio attributes found in the data set for the random user, but only slightly. From this, we could conclude that my music taste is more diverse in comparison, however it could also just mean that some tracks simply have much higher values of specific features which skews the results.
+The results could indicate that the features found in my data set are more diverse than the audio attributes found in the data set for the random user, but only slightly. From this, we could conclude that my music taste is more diverse in comparison, however it could also just mean that some tracks simply have much higher values of specific features which skews the results.
 
 ![alt text](standarddev.jpg)
