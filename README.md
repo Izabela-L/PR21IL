@@ -130,7 +130,7 @@ This radar chart represents the mean values of audio features. The prevalent att
 
 ![alt text](meanvaluesbar.jpg) 
 
-Mean values of audio features represented in a standard bar plot.
+Mean values of audio features represented in a standard bar plot. Mean values of audio features represented in a standard bar plot. It seems that loudness, energy and tempo are the three main audio features that influence whether I will like or dislike a track. Meanwhile acoustic and instrumental elements are something I avoid.
 
 Here I wanted to more closely examine how different audio features correlate to one another. Below we can see a pair plot showing the relationship between pairs of audio features found in my data set.
 
