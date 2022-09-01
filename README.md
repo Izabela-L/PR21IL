@@ -156,7 +156,7 @@ Valence and danceability have a slightly positive relationship, however there al
 
 ## Comparison
 
-First, I wanted to take a look at popularity scores and how the compare. 
+First, I wanted to take a look at popularity scores and how they compare. 
 
 ![alt text](popularity.jpg)
 
