@@ -73,7 +73,7 @@ Spotify calculates and collects a variety of different audio features for each t
 
 ## Preprocessing and first look at data
 
-Before I performed any analysis on the data, I performed a few preprocessing steps. First I made sure the dataframes don't contain any NaN values and removed unwanted columns. Then I normalized the data by rescaling the values of tempo and loudness using min-max scaler. This was done so that all of the continuous audio feature values reside in the same range between 0 and 1. 
+Before I performed any analysis on the data, I did a few preprocessing steps. First I made sure the dataframes don't contain any NaN values and removed unwanted columns. Then I normalized the data by rescaling the values of tempo and loudness using min-max scaler. This was done so that all of the continuous audio feature values reside in the same range between 0 and 1. 
 
 ### Distribution of songs and artists
 The dataset which contains my library is library.csv. It contains a total of 2268 tracks from 199 artists. The top five artists with the most songs in the dataset are: 
@@ -138,7 +138,7 @@ Here I wanted to more closely examine how different audio features correlate to 
 
 Most of the features actually don't have a very strong relationship between them. There also seem to be plenty of outliers in a few of the plots. Due to the number of features and tracks the data is a bit hard to read. A heatmap gives us clearer insight.
 
-![alt text]('heatmap.jpg')
+![alt text](heatmap.jpg)
 
 Now it's a lot easier to see how pairs of features correlate to eachother. There are clear relationships between loudness and energy, valence and danceability and acousticness and energy.
 
@@ -156,9 +156,9 @@ Valence and danceability have a slightly positive relationship, however there al
 
 ## Comparison
 
-First, I wanted to take a look at popularity scores and how the compare. 
+First, I wanted to take a look at popularity scores and how they compare. 
 
-![alt text]('popularity.jpg')
+![alt text](popularity.jpg)
 
 The distribution of popularity is more irregular in the data set representing my music library, with most of the tracks having a very low popularity score. The number of tracks drops of the higher the score is. The other set includes music that is moderately to highly popular although the frequency of songs also decreases with popularity. Neither of us seem to listen to many very popular songs, but comparatively my taste seems to be a bit more niche.
 
